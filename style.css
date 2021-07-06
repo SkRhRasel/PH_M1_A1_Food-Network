@@ -99,6 +99,9 @@ Nav Style
     background-repeat: no-repeat;
     background-position: right bottom;
 }
+.top-section h1{
+    padding-top: 60px;
+}
 .top-section > div > p{
     color: #828282;
     margin-bottom: 60px;
