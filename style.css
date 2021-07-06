@@ -97,7 +97,7 @@ Top section Style
 
 }
 .half-width img{
-    width: 60%;
+    width: 70%;
 }
 
 .link-btn{ 
@@ -135,6 +135,7 @@ About Me Section Style
     background-image: url(images/shapes/7.png);
     background-repeat:  no-repeat;
     background-size: cover;
+    padding-top: 100px;
 }
 .second-bg{
     height: 650px;
@@ -142,9 +143,6 @@ About Me Section Style
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-}
-.about-me img{
-    width: 50%;
 }
 .about-me h2{
     margin-top: 80px;
