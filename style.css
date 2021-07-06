@@ -1,13 +1,3 @@
-/* html {
-	font-size: calc(4px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	outline: 0;
-} */
-
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -15,6 +5,7 @@ body{
 .content{
  max-width: 1440px;
   margin: auto;
+  padding: 0px 25px;
 }
 h1{
     font-size: 60px;
@@ -50,52 +41,6 @@ Nav Style
 --------------------------------------------- 
 */
 
-/* .topnav {
-    overflow: hidden;
-    background-color: #0B0D17;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center; 
-  }
-  
-
-.topnav ul{
-    display: block;
-    width: 100%;
-    display: table;
-    text-align: center;
- }
-  
-.topnavul ul li{
-    
-  display:inline-block;
-}
-  
-  .topnav ul li a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    min-width: 90px;
-    padding-right:15px;
-    cursor: pointer;
-  }
-  
-  .topnav a:hover {
-    background-color: #f0cfce;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #FC954A;
-    color: white;
-  } */
-
-
   .nav-container {
     overflow: hidden;
     background-color: #0B0D17;
@@ -106,14 +51,15 @@ Nav Style
     align-items:center; 
   }
   #logo{
-    border:1px solid #FC954A;
-    padding:0 10px;
+    border:2px solid #FC954A;
+    padding:3px 10px;
     font-size: 20px;
     width: 120px;
+    border-radius: 10px;
   }
   #navbar li{
     display:inline-block;
-    margin-top: 13px;
+    margin-top: 18px;
     padding-left:35px;
   }
 
@@ -167,7 +113,7 @@ Top section Style
 }
 
 .top-section{
-    padding-top: 100px;
+    padding-top: 140px;
     height: 600px;
     background-color: #FFFFFF;
     background-image: url(images/shapes/top_area_shape.png);
