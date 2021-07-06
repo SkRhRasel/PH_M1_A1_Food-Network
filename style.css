@@ -13,10 +13,8 @@ body{
     margin: 0;
 }
 .content{
-    
  max-width: 1440px;
   margin: auto;
-  padding: 10px;
 }
 h1{
     font-size: 60px;
@@ -48,6 +46,100 @@ h2{
 
 /* 
 ---------------------------------------------
+Nav Style
+--------------------------------------------- 
+*/
+
+/* .topnav {
+    overflow: hidden;
+    background-color: #0B0D17;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center; 
+  }
+  
+
+.topnav ul{
+    display: block;
+    width: 100%;
+    display: table;
+    text-align: center;
+ }
+  
+.topnavul ul li{
+    
+  display:inline-block;
+}
+  
+  .topnav ul li a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    min-width: 90px;
+    padding-right:15px;
+    cursor: pointer;
+  }
+  
+  .topnav a:hover {
+    background-color: #f0cfce;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #FC954A;
+    color: white;
+  } */
+
+
+  .nav-container {
+    overflow: hidden;
+    background-color: #0B0D17;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content:space-between;
+    align-items:center; 
+  }
+  #logo{
+    border:1px solid #FC954A;
+    padding:0 10px;
+    font-size: 20px;
+    width: 120px;
+  }
+  #navbar li{
+    display:inline-block;
+    margin-top: 13px;
+    padding-left:35px;
+  }
+
+  #navbar ul li a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    min-width: 90px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #navbar a:hover {
+    background-color: #a38f8e;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #FC954A;
+    color: white;
+  }
+
+/* 
+---------------------------------------------
 Top section Style
 --------------------------------------------- 
 */
@@ -68,9 +160,10 @@ Top section Style
     color: white;
     font-weight: 700;
     background-image: linear-gradient(to right, #FD9A4D,#FE482D);
-    /* background-color: orange; */
     padding:20px 45px;
     margin: 60px 0px 30px 0px;
+    border: none;
+    cursor: pointer;
 }
 
 .top-section{
@@ -92,14 +185,20 @@ About Me Section Style
 --------------------------------------------- 
 */
 .about-me{
+    height: 650px;
     background-image: url(images/shapes/7.png);
     background-repeat:  no-repeat;
     background-size: cover;
 }
 .second-bg{
+    height: 650px;
     background-image: url(images/shapes/top_area_shape.png);
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+.about-me img{
+    width: 50%;
 }
 .about-me h2{
     margin-top: 80px;
@@ -118,6 +217,7 @@ Recipie Style
 --------------------------------------------- 
 */
 .recipie-area{
+    padding-top: 50px;
     background-color: white;
     background-size: cover;
     background-repeat:  no-repeat;
@@ -134,7 +234,7 @@ Recipie Style
     margin: auto;
     padding: 10px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .recipie-item{
     border-radius: 25px;
@@ -185,14 +285,13 @@ social area Style
 --------------------------------------------- 
 */
 .social-area {
-    
     height: 226px ;
     border-radius: 25px;
 	/* box-shadow: 1px 12px 32px -15px rgba(0, 0, 0, 0.56); */
     box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
 -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
-    padding: 20px;
+    padding: 0px;
 }
 
 
@@ -204,12 +303,12 @@ social area Style
     text-align: center;
 }
 
-.social-item h3{
+.social-item h1{
     color: #18191F;
     font-size: 48px;
     text-align: center;
-    font-weight: bold;
-    line-height: 1.1;
+    font-weight: 900;
+    line-height: 0.5;
 
 }
 
@@ -218,8 +317,66 @@ social area Style
     line-height: 0;
     font-size: 16px;
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
 }
+/* 
+---------------------------------------------
+Contact Style
+--------------------------------------------- 
+*/
+
+.contact-me{
+    height: 720px;
+    background-image: url(images/shapes/contact.jpg);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-color: #0B0D17;
+}
+
+.contact-me  h2{
+    color: #676767;
+    font-size: 36px;
+    text-align: center;
+    line-height: 0.5;
+}
+.contact-me p{
+    color: #252525;
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container {border-radius: 25px;
+    box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
+    align-items: center;
+    max-width: 600px;
+    padding: 30px;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
 /* 
 ---------------------------------------------
 footer Style
